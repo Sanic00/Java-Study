@@ -1,0 +1,19 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class WindowEventEx02 extends Frame implements WindowListener{
+
+	public WindowEventEx02() {
+		super("WinEvent2");
+		addWindowListener(this);
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		new WindowEventEx02();
+	}
+
+}

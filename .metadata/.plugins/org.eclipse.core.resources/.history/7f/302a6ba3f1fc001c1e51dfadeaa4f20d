@@ -1,0 +1,46 @@
+package SwingEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.io.*;
+
+public class JColorChooserEx extends JFrame implements ActionListener {
+
+		JMenuBar mb = new JMenuBar();
+		JMenu mnuselect = new JMenu("선택");
+		JMenuItem mnucolor = new JMenuItem("색상");
+		JLabel l = new JLabel("출력장");
+		JTextArea ta = new JTextArea();
+		
+		
+		public JColorChooserEx() {
+			
+			super("JColorChooser Test");
+			mnuselect.add(mnucolor);	
+			
+			setJMenuBar(mb);
+			
+			add("North" , l);
+			add("Center", ta);
+			
+			
+			setDefaultCloseOperation(EXIT_ON_CLOSE);
+			setBounds(300, 300, 300, 200);
+			setVisible(true);
+		}
+	
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+
+	}
+
+	public static void main(String[] args) {
+		new JColorChooserEx();
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.DBex;
+
+import java.sql.*;
+
+
+
+public class JdbcEx01 {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+
+	}
+
+}

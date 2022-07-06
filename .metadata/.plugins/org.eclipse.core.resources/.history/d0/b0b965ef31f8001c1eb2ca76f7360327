@@ -1,0 +1,29 @@
+package com.DBex;
+
+public class JdbcEx2 {
+
+	import java.sql.*;
+	
+	
+// update : 하과명 : 컴퓨터공학과 변경 조건  학과번호=203	
+	
+public static void main(String[] args) {
+    
+	StringBuffer sql = new StringBuffer();
+ 
+	sql.append(""); // 한줄로 쭉 써도 된다
+	sql.append("");
+	sql.append("");
+	
+	Connetion con = null;
+	Statement stmt = null;
+	
+	  try {
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+	}
+
+	}
+
+}

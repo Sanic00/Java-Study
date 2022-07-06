@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ExternalProject"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\USER\Downloads\최종백업.zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220610 백업.zip(최종)"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\부분백업(06.10)"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220610 백업.zip_完"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220610 백업.zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220609 미니프로젝트F.zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220609 미니프로젝트(1).zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220609 백업.zip"/>
+			<item value="C:\Users\USER\Downloads\미니게임.zip"/>
+			<item value="C:\Users\USER\Downloads\20220608 수업백업(해인씨 화이팅입니다 !).zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220607 백업.zip_미니테스트"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220607 백업.zip"/>
+			<item value="C:\Users\USER\Downloads\20220603 수업백업(해인씨 화이팅입니다 !).zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220603 백업.zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220602 백업.zip"/>
+			<item value="C:\Users\USER\Downloads\20220527 수업백업(해인씨 화이팅입니다 !).zip"/>
+			<item value="C:\Users\USER\Downloads\220527 백업.zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220527 백업.zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220526 백업.zip"/>
+			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220525 백업.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+		<item key="actionSetFilter" value="true"/>
+		<item key="internalFilter" value="true"/>
+		<item key="uncategorizedFilter" value="true"/>
+	</section>
+</section>

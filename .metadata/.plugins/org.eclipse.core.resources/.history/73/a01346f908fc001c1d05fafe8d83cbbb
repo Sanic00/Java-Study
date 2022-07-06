@@ -1,0 +1,38 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class ActionEventEx01 extends Frame implements ActionListener{
+
+	
+	//text 필드 생성
+	private TextField tf = new TextField(10);
+	
+	
+	public ActionEventEx01() {
+		super("ActionEvent Test");
+		setLayout(new FlowLayout());
+		add(tf);
+		
+		WinEvent we = new WinEvent();
+		addWindowListener(we);
+		setSize(300, 200);
+		setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+	
+}

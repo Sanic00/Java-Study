@@ -1,0 +1,37 @@
+package EventEx;
+
+import java.awt.Color;
+import java.awt.Frame;
+import java.awt.event.ActionListener;
+
+public class ActionEventEx04 extends Frame implements ActionListener{
+
+	private Button [] bt = new Button[4];
+	private Panel [] pp = new Panel[4];
+	private Color [] cc = 
+		{Color.red, Color.GREEN, Color.blue, Color.yellow};
+	
+	
+	
+	
+	
+	
+	public ActionEventEx04() {
+		
+		super("ActionEvent4");
+		
+		WinEvent we = new WinEvent();
+		addWindowListener(we);
+		setSize(300, 200);
+		setVisible(true);
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		new ActionEventEx04();
+
+	}
+	
+}

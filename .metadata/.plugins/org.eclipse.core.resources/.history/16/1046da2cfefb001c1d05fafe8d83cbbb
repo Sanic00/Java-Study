@@ -1,0 +1,21 @@
+package EventEx;
+
+import java.awt.*;
+
+
+
+public class FileDialogEx extends Frame {
+	FileDialog fd = new FileDialog(this, "≥ª≤® ¿˙¿Â", FileDialog.SAVE);
+
+
+ public FileDialogEx() {
+	 
+	 WinEvent we = new WinEvent();
+	 addWindowListener(we)
+	 setSize(300, 200);
+	 setVisible(true);
+	 fd.setVisible(true);
+	 System.out.println(fd.getFile());
+	 System.out.println(fd.getDirectory());
+ }
+}

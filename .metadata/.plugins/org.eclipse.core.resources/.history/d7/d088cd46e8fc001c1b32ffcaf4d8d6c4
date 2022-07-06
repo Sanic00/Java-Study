@@ -1,0 +1,36 @@
+package SwingEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+
+public class JSliderEx extends JFrame {
+	
+	public JSliderEx() {
+		
+		super("JSlider Test");
+		
+	
+	
+	
+	
+	
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setBounds(300, 200, 400, 300);
+		setVisible(true);
+
+	}
+	
+	
+	public static void main(String[] args) {
+		new JComboxEx();
+
+		
+		
+		
+		
+		
+	}
+
+}

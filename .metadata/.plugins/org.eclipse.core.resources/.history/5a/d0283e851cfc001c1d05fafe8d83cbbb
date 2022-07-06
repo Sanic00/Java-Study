@@ -1,0 +1,70 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import com.awtex.*;
+
+public class MouseEventEx extends Frame implements MouseListener {
+
+	private Button bt = new Button("확인");
+	private Button bt1 = new Button("취소");
+	
+
+	public MouseEventEx() {
+		
+		super("Mouse Test");
+		setLayout(new FlowLayout());
+		
+		
+		WinEvent we = new WinEvent();
+		addWindowListener(we);
+		setSize(300, 200);
+		setVisible(true);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		
+
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+	
+
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		
+
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+	
+
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		
+
+	}
+
+	public static void main(String[] args) {
+		new MouseEventEx();
+
+	}
+
+}

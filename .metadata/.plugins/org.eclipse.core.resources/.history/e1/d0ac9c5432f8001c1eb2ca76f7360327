@@ -1,0 +1,40 @@
+package com.DBex;
+import java.sql.*;
+
+public class JdbcEx2 {
+
+	
+	
+// update : 하과명 : 컴퓨터공학과 변경 조건  학과번호=203	
+	
+public static void main(String[] args) {
+    
+	StringBuffer sql = new StringBuffer();
+ 
+	sql.append(""); // 한줄로 쭉 써도 된다
+	sql.append("");
+	sql.append("");
+	
+	Connection con = null;
+	Statement stmt = null;
+	
+	  try {
+		  // 드라이버 검색
+		  Class.forName("oracle.jdbc.driver.OracleDriver");
+		  
+		  String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+		  String id = "scott";
+		  String password = "tiger";
+		  
+		  // DB연결
+		  con = DriverManager.getConnection(url, id, password);
+		  
+		  
+	} catch (Exception e) {
+		// TODO: handle exception
+	}
+
+	}
+
+}
+}

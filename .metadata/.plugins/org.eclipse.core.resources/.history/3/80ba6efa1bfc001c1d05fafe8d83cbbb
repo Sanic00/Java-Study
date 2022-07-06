@@ -1,0 +1,60 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import com.awtex.*;
+
+public class MouseEventEx extends Frame implements MouseListener {
+
+	
+	public MouseEventEx() {
+		
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

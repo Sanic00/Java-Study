@@ -1,0 +1,20 @@
+package SwingEx;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+//여태까지는 한클래스 안에서 구현 했지만 지금부터 하는거는 클래스를 분할해서 
+public class ConfirmButtonActionListener implements ActionListener {
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

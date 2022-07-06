@@ -1,0 +1,40 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import com.awtex.*;
+
+public class KeyEventEx extends Frame implements KeyListener {
+
+	public KeyEventEx() {
+		WinEvent we = new WinEvent();
+		addWindowListener(we);
+		setSize(300, 200);
+		setVisible(true);
+	}
+	
+	
+	@Override
+	public void keyTyped(KeyEvent e) {
+		
+
+	}
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+	
+
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		
+
+	}
+
+	public static void main(String[] args) {
+			new KeyEventEx();
+
+	}
+
+}

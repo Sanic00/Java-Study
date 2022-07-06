@@ -1,0 +1,43 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import com.awtex.*;
+
+public class ItemEventEx extends Frame implements ItemListener, ActionListener {
+
+	private Label lb = new Label("Ç÷ÇÙÇü :", Label.RIGHT);
+	private Label lb1 = new Label("»ý³â¿ùÀÏ :", Label.RIGHT);
+	private Label lb2 = new Label("Áö¿ª :", Label.RIGHT);
+	
+	private TextField bType = new TextField();
+	private Choice blood = new Choice();
+	private TextField birth = new TextField();
+		
+	public ItemEventEx() {
+		WinEvent we = new WinEvent();
+		addWindowListener(we);
+		setSize(300, 200);
+		setVisible(true);
+	}
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+
+	}
+
+	@Override
+	public void itemStateChanged(ItemEvent e) {
+	
+
+	}
+
+	public static void main(String[] args) {
+		new ItemEventEx();
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.methodex;
+
+public class OverloadingEx02 {
+//함수의 이름은 같지만, 매개변수의 자료형은 다르다 .= >오버로딩
+	
+	public void getLength(int n) {
+		
+	}
+	
+	public void getLength(int n , int n1) { // 매개변수의 갯수가 다르니 된다.
+		
+	}
+	
+	void getLength(float n) {
+		
+	}
+	
+	private void getLength(String n) {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

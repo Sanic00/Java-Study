@@ -1,0 +1,41 @@
+package SwingEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+
+public class JSliderEx extends JFrame {
+							//방향 수평이냐 수직  초기값 0 최댓값 255
+	JSlider red = new JSlider(JSlider.HORIZONTAL , 0, 255, 0);
+	
+	
+	
+	
+	public JSliderEx() {
+		
+		super("JSlider Test");
+		
+		 
+	
+	
+	
+	
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setBounds(300, 200, 400, 300);
+		setVisible(true);
+
+	}
+	
+	
+	public static void main(String[] args) {
+		new JComboxEx();
+
+		
+		
+		
+		
+		
+	}
+
+}

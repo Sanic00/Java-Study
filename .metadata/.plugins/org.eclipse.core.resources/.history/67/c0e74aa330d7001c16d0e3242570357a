@@ -1,0 +1,19 @@
+package com.methodex;
+
+/*	메소드 정의시 통일된 인자의 자료형에 '...'라고 명시하므로 이를 통해 메소드를 수행하는데
+ *	필요한 인자의 수를 유연(내부적으로/가변적으로)하게 구현할 수 있다. 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+public class VariableEx {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

@@ -1,0 +1,38 @@
+package EventEx;
+
+import java.awt.*;
+
+public class DialogEx extends Frame{
+
+	private Dialog d = new Dialog(this, "조회 서비스", false);
+	
+	
+	public DialogEx() {
+		
+		super("Dialog Test");
+		
+		WinEvent we = new WinEvent();
+		 setDialog();
+		 addWindowListener(we);
+		 setSize(300, 200);
+		 setVisible(true);
+		
+		
+		
+		
+	}
+	
+	private void setDialog() {
+		
+		
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		new DialogEx();
+
+	}
+
+}

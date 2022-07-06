@@ -1,0 +1,26 @@
+package EventEx;
+
+import java.awt.Frame;
+import java.awt.event.ActionListener;
+
+public class ActionEventEx4 extends Frame implements ActionListener{
+
+	public ActionEventEx04() {
+		
+		super("ActionEvent4");
+		
+		WinEvent we = new WinEvent();
+		addWindowListener(we);
+		setSize(300, 200);
+		setVisible(true);
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		new ActionEventEx4()
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class ActionEventEx01 extends Frame implements ActionListener{
+
+	
+	public ActionEventEx01() {
+		super("ActionEvent Test");
+		setLayout(new FlowLayout());
+		
+		setSize(300, 200);
+		setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+	
+}

@@ -1,0 +1,25 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import com.awtex.*;
+
+public class ActionEventEx03 extends Frame implements ActionListener{
+
+	private MenuBar mb = new MenuBar();
+	private Menu file = new Menu("File");
+	
+	public ActionEventEx03() {
+		super("ActionEvent03");
+		
+		WinEvent we = new WinEvent();
+		addWindowListener(we);
+		setSize(300, 200);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+	new ActionEventEx03();
+
+	}
+
+}

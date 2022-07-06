@@ -1,0 +1,27 @@
+package EventEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import com.awtex.*;
+
+public class ActionEventEx02 extends Frame implements ActionListener {
+
+	private Button bt = new Button("Á¾·á");
+	
+	public ActionEventEx02 () {
+		
+		bt.addActionListener(this);
+		setLayout(new FlowLayout());
+		WinEvent we = new WinEvent();
+		addWindowListener(we);
+		setSize(300, 200);
+		setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		System.exit(0);
+
+	}
+
+}
