@@ -1,0 +1,34 @@
+package SwingEx;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class GraphicExam {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("성적 그래프 프로그램");
+		
+		
+		frame.setPreferredSize(new Dimension(400, 350));
+		frame.setLocation(500, 200);
+		
+		Container contentPane = frame.getContentPane();
+		
+		JPanel controlJPanel = new JPanel();
+		JTextField text1 = new JTextField(3); // 국어 영어 수학
+		JTextField text2 = new JTextField(3);
+		JTextField text3 = new JTextField(3);
+		
+		JButton button = new JButton("그래프 그리기");
+		JButton button = new JButton();
+		JButton button = new JButton();
+		
+		
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+		frame.pack();
+		frame.setVisible(true);
+
+	}
+
+}

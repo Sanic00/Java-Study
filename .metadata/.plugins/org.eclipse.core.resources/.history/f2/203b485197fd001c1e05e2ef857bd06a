@@ -1,0 +1,26 @@
+package SwingEx;
+
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.table.*;
+
+public class PrintActionListener implements ActionListener {
+
+	
+	public PrintActionListener() {
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+
+
+	}
+
+}

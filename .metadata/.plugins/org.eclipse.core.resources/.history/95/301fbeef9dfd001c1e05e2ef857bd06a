@@ -1,0 +1,25 @@
+package SwingEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.table.*;
+
+public class AddActionListener implements ActionListener {
+
+	JTable table;
+	JTextField text1, text2, text3;
+	
+	public AddActionListener(JTable table,JTextField text1, JTextField text2, JTextField text3 ) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+
+	}
+
+}

@@ -1,0 +1,37 @@
+package SwingEx;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class DrawingPanel extends JPanel {
+
+		int korean, english, math;
+		
+		//무언가를 그릴때? 칠할때? paint라는 메소드 
+		@Override
+		public void paint(Graphics g) {
+			
+			g.clearRect(0, 0, getWidth(), getHeight());
+			//x축이 50 에서 350까지 
+			g.drawLine(50, 250, 350, 250);
+			
+			for(int cnt = 1; cnt<11; cnt++) {
+				g.drawString(cnt*10+"", 25, 255 - 20 * cnt);
+				g.drawLine(50, 250, 350, 250);
+				}
+				
+				g.drawLine(50, 20, 50, 250);
+				g.drawString("국어", 100, 270);
+			
+			
+			
+		super.paint(g);
+		}
+	
+	
+	
+	
+	
+	
+	
+}

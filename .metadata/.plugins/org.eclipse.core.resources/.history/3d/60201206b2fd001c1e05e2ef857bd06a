@@ -1,0 +1,14 @@
+package SwingEx;
+
+import java.awt.event.*;
+import java.awt.Event;
+
+public class DrawActionListene implements ActionListener {
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

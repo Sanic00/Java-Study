@@ -1,0 +1,33 @@
+package SwingEx;
+import java.applet.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class HorseMain extends JFrame implements Runnable {
+
+	public HorseMain() {
+		
+		
+		
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+		frame.pack();
+		frame.setVisible(true);
+		
+	}
+	
+	
+	
+	
+	@Override
+	public void run() {
+	
+
+	}
+
+	public static void main(String[] args) {
+		new HorseMain();
+
+	}
+
+}

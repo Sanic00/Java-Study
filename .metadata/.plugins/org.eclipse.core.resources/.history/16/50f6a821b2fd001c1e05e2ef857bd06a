@@ -1,0 +1,20 @@
+package SwingEx;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class DrawActionListene implements ActionListener {
+
+	JTextField text1, text2, text3;
+	DrawingPanel drawingPanel;
+	
+	
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package SwingEx;
+
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.table.*;
+
+public class RemoveActionListener implements ActionListener {
+
+	
+	JTable table;
+	
+	public RemoveActionListener(JTable table) {
+		this.table = table;
+	}
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+	
+
+	}
+
+}

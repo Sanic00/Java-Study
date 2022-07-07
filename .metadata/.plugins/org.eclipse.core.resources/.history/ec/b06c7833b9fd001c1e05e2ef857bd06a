@@ -1,0 +1,76 @@
+package SwingEx;
+
+import java.applet.*;
+import java.awt.Canvas;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class HorseMain extends JFrame implements Runnable {
+
+	private Canvas can;
+	private Image buffer;
+	private Image [] horse; 
+	
+	//말이 움직엿다 안움직였다 
+	private boolean bRepeat = true; 
+	
+	
+	
+	public HorseMain() {
+		
+		 intiHores();
+		
+		
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+		pack();
+		setVisible(true);
+		
+	}
+	
+	
+	
+	
+	@Override
+	public void run() {
+		
+		
+
+	}
+
+	//스레드 구현
+	public void makeThread() {
+		
+	}
+	
+	//초기화 시킬 스레드 구현(말 이미지를 불러들어올 메소드)
+	public void intiHores() {
+		horse = new Image[11];
+		
+		for(int i=0; i<horse.length; i++) {
+			horse[i] = Toolkit.getDefaultToolkit().getImage(String.format("SwingEx.Image/black%02d.png", i+1));//toolkit 이미지를 불러오는 메소드
+		}
+	}
+	
+	//버퍼 
+	public void bufferPaint(int n) {
+		buffer = createImage(can.getWidth(), can.getHeight());
+		Graphics buffer_g = buffer.getGraphics();
+		buffer_g.drawImage(horse[n],50, 50, this);
+		can.repaint();
+		
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		new HorseMain();
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package SwingEx;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class DrawingPanel extends JPanel {
+
+		int korean, english, math;
+		
+		//무언가를 그릴때? 칠할때? paint라는 메소드 
+		@Override
+		public void paint(Graphics g) {
+			
+			g.clearRect(0, 0, getWidth(), getHeight());
+			
+		super.paint(g);
+		}
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,23 @@
+package SwingEx;
+
+public class HorseMain implements Runnable {
+
+	public HorseMain() {
+		
+	}
+	
+	
+	
+	
+	@Override
+	public void run() {
+	
+
+	}
+
+	public static void main(String[] args) {
+		new HorseMain();
+
+	}
+
+}

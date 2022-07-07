@@ -1,0 +1,18 @@
+package SwingEx;
+
+import java.awt.*;
+import javax.swing.*;
+
+
+
+public class WindowExam02 {
+
+
+	
+	public static void main(String[] args) {
+	//프레임 상속 안받고 객체 만들기
+		JFrame frame = new JFrame("참가자 명단 프로그램");
+
+	}
+
+}

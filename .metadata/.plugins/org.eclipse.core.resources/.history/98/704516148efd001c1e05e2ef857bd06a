@@ -1,0 +1,51 @@
+package SwingEx;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class JOptionpaneEX extends JFrame implements ActionListener {
+
+	
+	
+	JButton b1,b2,b3,b4;
+	String [] str = {"login","회원가입"};
+		
+	
+		public JOptionpaneEX() {
+
+			super("JOptionpane Test");
+			setLayout(new FlowLayout());
+			
+			//버튼을 만들어서 여기다 얹는다
+			b1 = new JButton("MessageDialog");
+			b2 = new JButton("ConfirmDialog");
+			b3 = new JButton("InputDialog");
+			b4 = new JButton("OptionDialog");
+			
+			add(b1); add(b2); add(b3); add(b4);
+			
+			//저 버튼을 눌렀을때 이벤트가 일어날수 있게 해줌 
+			
+			setDefaultCloseOperation(EXIT_ON_CLOSE);
+			setLocation(300, 300);
+			pack(); // 자동으로 크기 잡아주는 놈
+			setVisible(true);
+			
+		}
+	
+	
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+	
+	}
+
+	public static void main(String[] args) {
+		new JOptionpaneEX();
+
+	}
+
+}
