@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="ImportExportAction">
 		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ExternalProject"/>
-		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.FileSystem"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
@@ -14,6 +14,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\USER\Desktop\Swing.zip"/>
 			<item value="C:\Users\USER\Downloads\최종백업.zip"/>
 			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220610 백업.zip(최종)"/>
 			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\부분백업(06.10)"/>
@@ -33,7 +34,6 @@
 			<item value="C:\Users\USER\Downloads\220527 백업.zip"/>
 			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220527 백업.zip"/>
 			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220526 백업.zip"/>
-			<item value="C:\Users\USER\Desktop\김주은 글로벌인 파일\수업백업파일\220525 백업.zip"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
@@ -47,5 +47,17 @@
 		<item key="actionSetFilter" value="true"/>
 		<item key="internalFilter" value="true"/>
 		<item key="uncategorizedFilter" value="true"/>
+	</section>
+	<section name="ZipFileImportWizard">
+	</section>
+	<section name="FileSystemExportWizard">
+		<item key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
+		<item key="WizardFileSystemResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="false"/>
+		<item key="WizardFileSystemResourceExportPage1.STORE_RESOLVE_LINKED_RESOURCES_ID" value="false"/>
+		<list key="WizardFileSystemResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\USER\Desktop"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
 	</section>
 </section>
