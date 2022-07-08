@@ -31,6 +31,8 @@ public class UnicastServer {
 				 * 스레드 생성시 socket을 전달 받아서 구현 함 
 				 * 스레드를 시작함
 				 */
+				
+				//스레드 객체 만들어서 호출 
 				UnicastServerThread thread = new UnicastServerThread(socket);
 				
 				thread.start();
