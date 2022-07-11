@@ -198,7 +198,7 @@ public class MultiChatClient implements Runnable, ActionListener {
 			// 입출력 스트림 생성
 			inMsg = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			
-			outMsg = new PrintWriter(socket.getOutputStream());
+			outMsg = new PrintWriter(socket.getOutputStream(),true);
 			
 			//서버에 로그인 메시지를 전달
 			outMsg.println(id + "/" + "login");
