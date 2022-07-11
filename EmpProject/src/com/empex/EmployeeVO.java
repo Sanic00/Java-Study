@@ -1,6 +1,6 @@
 package com.empex;
 
-public class employeeVO {
+public class EmployeeVO {
 
 	// 필드 정의
 	private int no;
@@ -10,8 +10,12 @@ public class employeeVO {
 	private String email;
 	private String status;
 	
+	public EmployeeVO() {
+		
+	}
+	
 	//생성자
-	public employeeVO(int no, String name, String jobGrade, 
+	public EmployeeVO(int no, String name, String jobGrade, 
 			int department, String email){
 		
 		this.no = no;
@@ -26,7 +30,7 @@ public class employeeVO {
 	
 	}
 	//생성자 매개변수 status 추가
-	public employeeVO(int no, String name, String jobGrade, 
+	public EmployeeVO(int no, String name, String jobGrade, 
 			int department, String email, String status, String status) {
 		
 		this.no = no;
