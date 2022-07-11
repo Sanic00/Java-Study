@@ -111,7 +111,21 @@ public class MultiChatClient implements Runnable, ActionListener {
 		msgOut.setEditable(false); //사용자가 편집 수정 못하게 하는거
 		
 		// 수직 스크롤 바는 항상 나타태고, 수평 스크롤 바는 필요시에만 나타나기(내용이 많아지면 스크롤 바가 필요하다)
-		JScrollPane jsp = new JScrollPane();
+		JScrollPane jsp = new JScrollPane(msgOut,
+			JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
+			JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		
+		jframe.add(tab, BorderLayout.NORTH);
+		jframe.add(jsp, BorderLayout.CENTER);
+		jframe.add(msgPanel, BorderLayout.SOUTH);
+		
+		clayout.show(tab, "login");
+		
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jframe.pack();
+		jframe.setResizable(false);
+		jframe.setVisible(true);
+		
 		
 		
 	}
@@ -128,5 +142,12 @@ public class MultiChatClient implements Runnable, ActionListener {
 
 
 	}
+	
 
+	public static void main(String[] args) {
+		new MultiChatClient("127.0.0.1"); //자기자신
+		
+		
+		
+	}
 }
