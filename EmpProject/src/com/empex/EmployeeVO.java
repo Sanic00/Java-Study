@@ -31,7 +31,7 @@ public class EmployeeVO {
 	}
 	//생성자 매개변수 status 추가
 	public EmployeeVO(int no, String name, String jobGrade, 
-			int department, String email, String status, String status) {
+			int department, String email, String status) {
 		
 		this.no = no;
 		this.name = name;

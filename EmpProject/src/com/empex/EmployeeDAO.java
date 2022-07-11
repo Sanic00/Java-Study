@@ -198,15 +198,99 @@ public class EmployeeDAO {
    
    //전체 사원 목록 조회
    public ArrayList<EmployeeVO>getEmployeetotal(){
-      
+	  
+	   ArrayList<EmployeeVO> list = new ArrayList<EmployeeVO>();
 	   
+	   String dml = "select * from employee";
 	   
+	   Connection con = null;
+       PreparedStatement pstmt = null;
+       EmployeeVO emVO = null;
+       ResultSet rs = null;
+       
+       try {
+          
+          //데이터베이스와 연결
+          con = DBUtil.getConnection();
+          
+          //입력받은 사용자 정보를 처리하기 위한 sql문 생성 
+          pstmt = con.prepareStatement(dml);
+          
+          
+          rs = pstmt.executeQuery();
+
+          while(rs.next()) {
+             emVO = new EmployeeVO(rs.getInt(1), rs.getString(2), 
+            		 rs.getString(3), rs.getInt(4), rs.getString(5));
+          list.add(emVO);
+          }
+          
+          
+       } catch (SQLException e) {
+          System.out.println("e:["+e+"]");
+       } catch (Exception e) {
+          System.out.println("e:["+e+"]");
+       } finally {
+          
+           try {
+              if(rs != null)rs.close();
+              if(pstmt != null)pstmt.close();
+              if(con != null)con.close();
+           }catch(SQLException s) {
+             System.out.println("e:["+s+"]");
+           }
+       }
+       return list;
 	   
    }
    
    //전체 사원 목록 조회
-   public ArrayList<String>getColumn(){
-      
+   public ArrayList<String>getColumnName(){
+	   ArrayList<String> columnName = new ArrayList<>();
+	   
+	   String dml = "select * from employee";
+	   
+	   Connection con = null;
+       PreparedStatement pstmt = null;
+       ResultSet rs = null;
+       ResultSetMetaData rsmd = null;
+       
+       
+       
+       try {
+          
+          //데이터베이스와 연결
+          con = DBUtil.getConnection();
+          
+          //입력받은 사용자 정보를 처리하기 위한 sql문 생성 
+          pstmt = con.prepareStatement(dml);
+          rs = pstmt.executeQuery();
+          rsmd = rs.getMetaData();
+          
+          int cols = rsmd.getColumnCount();
+          
+          for(int i=1; i<=cols; i++) {
+        	  columnName.add(rsmd.getColumnName(i));
+          }
+          
+          
+       } catch (SQLException e) {
+          System.out.println("e:["+e+"]");
+       } catch (Exception e) {
+          System.out.println("e:["+e+"]");
+       } finally {
+          
+           try {
+              if(rs != null)rs.close();
+              if(pstmt != null)pstmt.close();
+              if(con != null)con.close();
+           }catch(SQLException s) {
+             System.out.println("e:["+s+"]");
+           }
+       }
+       return columnName;
+	   
+	   
    }
    
 }
