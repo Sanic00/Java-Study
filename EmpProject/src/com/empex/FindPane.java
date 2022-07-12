@@ -103,14 +103,14 @@ public class FindPane extends JPanel implements ActionListener {
 				System.out.println("e:[" + e + "]");
 			}
 			
-			if(edvo != null) { // 해당 사원이 존재 하지 않는다면 필드를 초기화를 해줘야된다.
+			if(evo != null) { // 해당 사원이 존재 하지 않는다면 필드를 초기화를 해줘야된다.
 				tf[0].setText(evo.getNo()+"");
 				tf[1].setText(evo.getName()+"");
 				tf[2].setText(evo.getJobGrade()+"");
 				tf[3].setText(evo.getDepartment()+"");
 				tf[4].setText(evo.getEmail());
 			}else {
-				JOptionPane.showInternalMessageDialog(this, 
+				JOptionPane.showMessageDialog(this, 
 						"검색 실패 !!!!");
 			}
 			
@@ -118,7 +118,7 @@ public class FindPane extends JPanel implements ActionListener {
 			
 		}else if(ae_type.equals(rsb.getText())) { // 다시 쓰기 버튼을 누를경우
 			int size = caption.length;
-			for(int i =0; i < size-1; i++) {
+			for(int i =0; i < size; i++) {
 				tf[i].setText("");
 			}
 		}
