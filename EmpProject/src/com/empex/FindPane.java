@@ -79,21 +79,42 @@ public class FindPane extends JPanel implements ActionListener {
 		if(ae_type.equals(okb.getText())) {//조회버튼을 누를 경우
 			
 			try {
-				
-				evo = new EmployeeVO( 0, tf[0].getText(),tf[1].getText(),
-					department,	tf[2].getText());
-				
 				edvo = new EmployeeDAO();
-				edvo.getEmployeeregiste(evo);
+				
+				String sno = tf[0].getText().trim();
+				String sname = tf[1].getText().trim();
+				
+				if( !sno.equals("") && !sname.equals("")) { // 사원 번호 와 이름
+					int no = Integer.parseInt(sno);
+					evo = edvo.getEmployeeCheck(no, sname);
+				
+				}else if(!sno.equals("") && sname.equals("")) { // 사원번호만
+					int no = Integer.parseInt(sno);
+					evo = edvo.getEmployeeNo(no);
+					
+				}else if(sno.equals("") && !sname.equals("")) { // 이름만
+				
+					evo = edvo.getEmployeeName(sname);
+				}
+				
 				
 				
 			} catch (Exception e) {
 				System.out.println("e:[" + e + "]");
 			}
 			
-			if(edvo != null)
-				JOptionPane.showMessageDialog(this, tf[0].getText() + "님이 성공적으로 추가했습니다.");
-				
+			if(edvo != null) { // 해당 사원이 존재 하지 않는다면 필드를 초기화를 해줘야된다.
+				tf[0].setText(evo.getNo()+"");
+				tf[1].setText(evo.getName()+"");
+				tf[2].setText(evo.getJobGrade()+"");
+				tf[3].setText(evo.getDepartment()+"");
+				tf[4].setText(evo.getEmail());
+			}else {
+				JOptionPane.showInternalMessageDialog(this, 
+						"검색 실패 !!!!");
+			}
+			
+			
 			
 		}else if(ae_type.equals(rsb.getText())) { // 다시 쓰기 버튼을 누를경우
 			int size = caption.length;
